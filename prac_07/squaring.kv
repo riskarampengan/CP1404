@@ -1,0 +1,19 @@
+GridLayout:
+    rows: 2
+    cols: 3
+    TextInput:
+        id: input_number
+        text: ''
+        font_size: 20
+        multiline: False
+    Button:
+        text: 'Square'
+        on_press: app.handle_calculate(float(input_number.text))
+    Label:
+        id: output_label
+        font_size: 20
+        color: (1, 100, 100, 10)
+    Label:
+        text: 'Enter a number and press "Square"'
+        font_size: 20
+        align: 'centre'
